@@ -1,6 +1,6 @@
 {
   "name": "exif-date-to-iso",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convert an EXIF date to ISO 8601",
   "author": "Brian Gershon <brian.five@gmail.com>",
   "main": "dist/index.js",
@@ -14,9 +14,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/briangershon/exif-date-to-iso"
-  },
-  "engines" : {
-    "npm" : ">3.0.0"
   },
   "keywords": [
     "date",
