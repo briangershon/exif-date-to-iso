@@ -30,3 +30,8 @@ Installation
 ------------
 
     npm install exif-date-to-iso
+
+Build Status
+------------
+
+[![Build Status](https://travis-ci.org/briangershon/exif-date-to-iso.png?branch=master)](https://travis-ci.org/briangershon/exif-date-to-iso)
