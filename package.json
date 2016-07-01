@@ -1,0 +1,41 @@
+{
+  "name": "exif-date-to-iso",
+  "version": "0.1.0",
+  "description": "Convert an EXIF date to ISO 8601",
+  "author": "Brian Gershon <brian.five@gmail.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src/index.es6.js --out-file dist/index.js",
+    "pretest": "npm run build",
+    "test": "mocha --compilers js:babel-register --require intelli-espower-loader $(find src -name '*.spec.js')",
+    "posttest": "npm run lint",
+    "lint": "eslint src/**/*.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briangershon/exif-date-to-iso"
+  },
+  "keywords": [
+    "date",
+    "exif",
+    "iso",
+    "iso8601"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.2.2",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^2.4.5",
+    "power-assert": "^1.4.1"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.4"
+  }
+}
