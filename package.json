@@ -10,8 +10,8 @@
     "test": "mocha --compilers js:babel-register --require intelli-espower-loader $(find src -name '*.spec.js')",
     "posttest": "npm run lint",
     "lint": "eslint src/**/*.js || true",
-    "prepublish": "npm test",
-    "publish": "npm publish"
+    "prerelease": "npm test",
+    "release": "npm publish"
   },
   "repository": {
     "type": "git",
